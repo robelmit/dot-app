@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="3dp">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Service Provided"
+    android:textColor="#03A9F4"
+    android:layout_gravity="center"
+    android:textSize="18dp"/>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Details"
+        android:layout_gravity="center"
+        android:textColor="#03A9F4"/>
+    <ImageView
+        android:layout_gravity="center"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/product"/>
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/chart"
+       android:padding="20dp" >
+        <TableRow>
+            <TextView
+                android:padding="5dp"
+                android:background="#DAE8FC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Service name"
+                />
+            <TextView
+                android:id="@+id/name"
+                android:padding="5dp"
+                android:background="#4D009688"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Profit" />
+
+        </TableRow>
+
+        <TableRow >
+            <TextView
+                android:padding="5dp"
+                android:background="#DAE8FC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="labor income" />
+            <TextView
+                android:padding="5dp"
+                android:background="#4D009688"
+                android:id="@+id/labor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="100000" />
+
+        </TableRow>
+        <View
+            android:layout_height="1dp"
+            android:background="#A39D9D"/>
+        <TableRow >
+            <TextView
+                android:padding="5dp"
+                android:background="#DAE8FC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Service expense" />
+            <TextView
+                android:padding="5dp"
+                android:id="@+id/expense"
+                android:background="#4D009688"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="10000" />
+
+        </TableRow>
+        <View
+            android:layout_height="1dp"
+            android:background="#A39D9D"/>
+        <View
+            android:layout_height="1dp"
+            android:background="#A39D9D"/>
+        <TableRow >
+            <TextView
+                android:padding="5dp"
+                android:background="#DAE8FC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="total price" />
+            <TextView
+                android:padding="5dp"
+                android:id="@+id/price"
+                android:background="#4D009688"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="10000" />
+        </TableRow>
+        <View
+            android:layout_height="1dp"
+            android:background="#A39D9D"/>
+        <TableRow >
+            <TextView
+                android:padding="5dp"
+                android:background="#DAE8FC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="gross profit" />
+            <TextView
+                android:padding="5dp"
+                android:id="@+id/gross"
+                android:background="#4D009688"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="10000" />
+        </TableRow>
+        <View
+            android:layout_height="1dp"
+            android:background="#A39D9D"/>
+        <TableRow >
+            <TextView
+                android:padding="5dp"
+                android:background="#DAE8FC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Description" />
+            <TextView
+                android:padding="5dp"
+                android:id="@+id/description"
+                android:background="#4D009688"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="10000" />
+        </TableRow>
+    </TableLayout>
+<!--
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:paddingBottom="10dp"/>
+-->
+
+</LinearLayout>

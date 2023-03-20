@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".generate">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tool"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="?attr/colorPrimary">
+        <ImageView
+            android:id="@+id/imgr"
+            android:layout_gravity="start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_navigate_before_black_24dp"/>
+        <TextView
+            android:textSize="18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/generate"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textColor="#fff"/>
+    </android.support.v7.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_below="@id/tool"
+            android:layout_marginTop="30dp"
+            android:id="@+id/fail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:src="@drawable/gener"
+                android:layout_gravity="center"
+                android:layout_width="120dp"
+                android:layout_height="120dp" />
+            <TextView
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:layout_marginTop="2dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No excel generated"/>
+            <TextView
+                android:textSize="15dp"
+                android:layout_marginTop="2dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Click generate button to generate"/>
+
+        </LinearLayout>
+<LinearLayout
+    android:layout_below="@id/tool"
+    android:layout_marginTop="30dp"
+    android:id="@+id/sucess"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <ImageView
+        android:src="@drawable/success"
+        android:layout_gravity="center"
+        android:layout_width="120dp"
+        android:layout_height="120dp" />
+    <TextView
+        android:textColor="#000"
+        android:textSize="20dp"
+        android:layout_marginTop="2dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Excel successfully generated"/>
+</LinearLayout>
+    <LinearLayout
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:layout_below="@id/text"
+        android:id="@+id/robiro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:layout_centerHorizontal="true"
+                android:id="@+id/month"
+                android:textAllCaps="false"
+                android:layout_marginLeft="10dp"
+                android:textColor="#fff"
+                android:layout_width="150dp"
+                android:layout_height="35dp"
+                android:text="select month"
+                android:background="@drawable/generate"/>
+            <TextView
+                android:id="@+id/text"
+                android:layout_below="@id/month"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hello world"
+                android:textSize="16dp"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_below="@id/robiro"
+        android:id="@+id/robiti"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:textColor="#03A9F4"
+                android:id="@+id/text1"
+                android:textAllCaps="false"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text=""/>
+            <TextView
+                android:textColor="#03A9F4"
+                android:id="@+id/text2"
+                android:textAllCaps="false"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_below="@id/robiti"
+        android:id="@+id/contain"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_centerHorizontal="true"
+            android:id="@+id/button"
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:background="@drawable/generate"
+            android:text="Generate excel"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_below="@id/contain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:padding="2dp"
+            android:id="@+id/pro"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/excelback">
+
+            <ImageView
+                android:src="@drawable/excel"
+                android:layout_gravity="center"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:textColor="#000"
+                android:textSize="14dp"
+                android:layout_marginTop="2dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" pixel.xls Generated"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

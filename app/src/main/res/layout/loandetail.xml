@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="3dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Loan Added"
+        android:textColor="#03A9F4"
+        android:layout_gravity="center"
+        android:textSize="18dp"/>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Details"
+        android:layout_gravity="center"
+        android:textColor="#03A9F4"/>
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/chart"
+        android:padding="20dp" >
+        <TableRow>
+            <TextView
+                android:padding="5dp"
+                android:background="#DAE8FC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Company name"
+                />
+            <TextView
+                android:id="@+id/name"
+                android:padding="5dp"
+                android:background="#4D009688"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Profit" />
+
+        </TableRow>
+        <View
+            android:layout_height="1dp"
+            android:background="#A39D9D"/>
+
+        <TableRow >
+            <TextView
+                android:padding="5dp"
+                android:background="#DAE8FC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="loan  amount" />
+            <TextView
+                android:padding="5dp"
+                android:background="#4D009688"
+                android:id="@+id/loan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="100000" />
+
+        </TableRow>
+
+
+        <View
+            android:layout_height="1dp"
+            android:background="#A39D9D"/>
+        <TableRow >
+            <TextView
+                android:padding="5dp"
+                android:background="#DAE8FC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="interest rate" />
+            <TextView
+                android:padding="5dp"
+                android:id="@+id/rate"
+                android:background="#4D009688"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="10000" />
+        </TableRow>
+        <View
+            android:layout_height="1dp"
+            android:background="#A39D9D"/>
+        <View
+            android:layout_height="1dp"
+            android:background="#A39D9D"/>
+        <TableRow >
+            <TextView
+                android:padding="5dp"
+                android:background="#DAE8FC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="monthly payment" />
+            <TextView
+                android:padding="5dp"
+                android:id="@+id/payment"
+                android:background="#4D009688"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="10000" />
+        </TableRow>
+        <View
+            android:layout_height="1dp"
+            android:background="#A39D9D"/>
+        <TableRow >
+            <TextView
+                android:padding="5dp"
+                android:background="#DAE8FC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Description" />
+            <TextView
+                android:padding="5dp"
+                android:id="@+id/description"
+                android:background="#4D009688"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="10000" />
+        </TableRow>
+    </TableLayout>
+    <!--
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:paddingBottom="10dp"/>
+    -->
+
+</LinearLayout>

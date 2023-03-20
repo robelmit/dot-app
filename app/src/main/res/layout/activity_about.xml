@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".about"
+    android:background="#fff">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/too"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_editor_absoluteX="16dp">
+        <ImageView
+            android:contentDescription="Setting"
+            android:layout_gravity="left"
+            android:id="@+id/back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:srcCompat="@drawable/ic_navigate_before_black_24dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/about"
+            android:textColor="#fff"
+            android:textSize="20dp" />
+    </android.support.v7.widget.Toolbar>
+    <FrameLayout
+        android:layout_below="@id/too"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.scwang.wave.MultiWaveHeader
+                android:id="@+id/robi"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:mwhCloseColor="#08ECE7E7"
+                app:mwhStartColor="#0803A9F4"
+                app:mwhWaveHeight="50dp"
+                app:mwhVelocity="2"/>
+
+            <nl.dionsegijn.konfetti.KonfettiView
+                android:id="@+id/viewKonfetti"
+                android:layout_width="match_parent"
+                android:layout_height="0dp" />
+
+            <TextView
+
+                android:id="@+id/pixx"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_below="@id/pix"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/pixelbackground"
+                android:paddingTop="5dp"
+                android:text="Pixel Technology,Mekelle  "
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+
+
+<LinearLayout
+    android:id="@+id/pix"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:orientation="vertical"
+    android:background="@drawable/cornblack">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:text="We develop Mobile and Web Apps"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#fff"
+        android:textSize="15dp" />
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <TextView
+           android:id="@+id/te"
+           android:layout_weight="0.6"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="20dp"
+           android:layout_marginTop="10dp"
+           android:layout_marginRight="20dp"
+           android:text="website :"
+           android:textColor="@android:color/white"
+           android:textSize="18sp" />
+       <TextView
+           android:layout_toRightOf="@id/te"
+           android:layout_weight="1.4"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="20dp"
+           android:layout_marginTop="10dp"
+           android:layout_marginRight="20dp"
+           android:text="www.pixelplc.com"
+           android:textColor="@android:color/white"
+           android:textSize="18sp" />
+   </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tx"
+            android:layout_weight="0.6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:text="Contact us"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+        <TextView
+            android:layout_toRightOf="@id/tx"
+            android:layout_weight="1.4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:text="0942648779"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txll"
+            android:layout_weight="0.6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_centerHorizontal="true"
+            android:text="In collaboration with "
+            android:textColor="@android:color/white"
+            android:textSize="15dp" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txlll"
+            android:layout_weight="0.6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_centerHorizontal="true"
+            android:text="Fidel Technology :0945073995"
+            android:textColor="@android:color/white"
+            android:textSize="16dp" />
+
+    </RelativeLayout>
+
+</LinearLayout>
+        </RelativeLayout>
+    </FrameLayout>
+
+</RelativeLayout>

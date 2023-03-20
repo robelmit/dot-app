@@ -1,0 +1,227 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <TextView
+        android:layout_below="@id/segmented2"
+        android:layout_marginTop="5dp"
+        android:id="@+id/text"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This week  Analytics"
+        android:textSize="20dp"
+        android:textColor="@color/b"
+        android:gravity="center"
+        android:layout_gravity="center"/>
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:layout_below="@id/text"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/chart"
+        />
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/chart"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+        <TableRow  >
+            <TextView
+                android:padding="5dp"
+                android:background="#0079D6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Type"
+                android:textColor="#fff"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#E91E63"
+                android:padding="5dp"
+                android:text="Total Sales"
+                android:textColor="#fff" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#FF9800"
+                android:padding="5dp"
+                android:text="Expense"
+                android:textColor="#fff" />
+
+            <TextView
+                android:padding="5dp"
+                android:background="#4CAF50"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Profit"
+                android:textColor="#fff"/>
+
+            <TextView
+                android:padding="5dp"
+                android:background="#FF5722"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Loss"
+                android:textColor="#fff"/>
+        </TableRow>
+
+        <TableRow >
+            <TextView
+                android:padding="5dp"
+                android:background="#DAE8FC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Product" />
+
+            <TextView
+                android:id="@+id/proprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#6DE91E63"
+                android:padding="5dp"
+                android:text="1" />
+            <TextView
+                android:id="@+id/proexp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#4BFFEB3B"
+                android:padding="5dp"
+                android:text="10002" />
+
+            <TextView
+                android:padding="5dp"
+                android:background="#4D009688"
+                android:id="@+id/propro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="100000" />
+
+            <TextView
+                android:background="#60FF5722"
+                android:padding="5dp"
+                android:id="@+id/proloss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="40000" />
+        </TableRow>
+        <View
+            android:layout_height="1dp"
+            android:background="#A39D9D"/>
+        <TableRow >
+            <TextView
+                android:padding="5dp"
+                android:background="#DAE8FC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Service" />
+
+            <TextView
+                android:id="@+id/sersale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#65E91E63"
+                android:padding="5dp"
+                android:text="1" />
+
+            <TextView
+                android:id="@+id/serexp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#4BFFEB3B"
+                android:padding="5dp"
+                android:text="50000" />
+
+            <TextView
+                android:padding="5dp"
+                android:id="@+id/serpro"
+                android:background="#4D009688"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="10000" />
+
+            <TextView
+                android:padding="5dp"
+                android:id="@+id/serloss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="40000"
+                android:background="#60FF5722"
+                />
+        </TableRow>
+        <View
+            android:layout_height="1dp"
+            android:background="#A39D9D"/>
+        <TableRow >
+            <TextView
+                android:padding="5dp"
+                android:background="#DAE8FC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Total" />
+
+            <TextView
+                android:id="@+id/totalsale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#66E91E63"
+                android:padding="5dp"
+                android:text="1" />
+
+            <TextView
+                android:id="@+id/tote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#4BFFEB3B"
+                android:padding="5dp"
+                android:text="50000" />
+
+            <TextView
+                android:padding="5dp"
+                android:id="@+id/totp"
+                android:background="#4D009688"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="10000" />
+
+            <TextView
+                android:padding="5dp"
+                android:id="@+id/totl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="40000"
+                android:background="#60FF5722"
+                />
+        </TableRow>
+    </TableLayout>
+
+
+</RelativeLayout>

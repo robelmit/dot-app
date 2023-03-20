@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".setting"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/to"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="?attr/colorPrimary">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="left"
+                android:contentDescription="Setting"
+                app:srcCompat="@drawable/ic_navigate_before_black_24dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/action_settings"
+                android:textColor="#fff"
+                android:textSize="20dp" />
+        </android.support.v7.widget.Toolbar>
+
+        <com.scwang.wave.MultiWaveHeader
+            android:id="@+id/wave"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_below="@id/to"
+            app:mwhCloseColor="#03A9F4"
+            app:mwhStartColor="?attr/colorPrimary"
+            app:mwhWaveHeight="25dp"
+            tools:layout_editor_absoluteX="16dp" />
+
+        <!--<LinearLayout
+        android:id="@+id/lan"
+        android:layout_below="@id/wave"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:weightSum="2"
+        android:orientation="horizontal">
+        <TextView
+            android:textColor="#000"
+            android:textAlignment="center"
+            android:paddingTop="10dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Choose Language"/>
+        <Spinner
+            android:entries="@string/action_settings"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+        </Spinner>
+    </LinearLayout>-->
+        <LinearLayout
+            android:id="@+id/ff"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/theme"
+            android:background="#636163"
+            android:orientation="horizontal" />
+
+        <LinearLayout
+            android:id="@+id/lan"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@id/wave"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="@string/chooselan"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+            <Spinner
+                android:id="@+id/spinner1"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_weight="1"
+                android:dropDownWidth="wrap_content"
+                android:spinnerMode="dialog" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#636163"></LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/theme"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/lan"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="@string/chotheme"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+            <ImageView
+                android:id="@+id/mabutton"
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="?attr/colorPrimary"
+                android:foregroundGravity="center"
+                app:srcCompat="@drawable/arrowdrop" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/aas"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/theme"
+            android:background="#636163"
+            android:orientation="horizontal" />
+
+
+        <RelativeLayout
+            android:id="@+id/card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/theme">
+
+            <LinearLayout
+                android:id="@+id/themer"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Email added"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+                <TextView
+                    android:id="@+id/labeled"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:background="?attr/colorPrimary"
+                    android:foregroundGravity="center"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="robeltsegay727@gmail.com"
+                    android:textAlignment="center"
+                    android:textColor="#fff" />
+
+                <RelativeLayout
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/delete"
+                        android:layout_width="16dp"
+                        android:layout_height="30dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center"
+                        android:gravity="right"
+                        android:src="@drawable/setting" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/space"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/theme"
+            android:background="#636163"
+            android:orientation="horizontal" />
+
+
+    </LinearLayout>
+    <Button
+        android:layout_marginTop="60dp"
+        android:id="@+id/hacku"
+        android:layout_gravity="center"
+        android:textColor="#fff"
+        android:background="@drawable/generate"
+        android:gravity="center"
+        android:textAllCaps="false"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:text="Add email"
+        android:layout_centerHorizontal="true"/>
+    <include layout="@layout/colorpicker" />
+
+</android.support.design.widget.CoordinatorLayout>
